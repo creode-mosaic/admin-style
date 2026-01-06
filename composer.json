@@ -1,0 +1,22 @@
+{
+    "name": "creode-mosaic/admin-style",
+    "description": "Provides visual enhancements to the WordPress admin interface.",
+    "type": "wordpress-muplugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Creode Limited"
+        }
+    ],
+    "require": {
+        "creode/mu-plugin-installer": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "creode/mu-plugin-installer": true
+        }
+    },
+    "extra": {
+        "wordpress-muplugin-entry": "mu-plugin.php"
+    }
+}

@@ -1,0 +1,134 @@
+/**
+ * Fonts
+ */
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/proxima_nova_regular.ttf") format("truetype");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/proxima-nova-sbold.otf") format("opentype");
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/proxima-nova-bold.otf") format("opentype");
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/proxima-nova-xbold.otf") format("opentype");
+	font-weight: 800;
+	font-display: swap;
+}
+
+/**
+ * Variables
+ */
+:root {
+	/* WordPress color overrides */
+	--wp-admin-theme-color: #231f20;
+	--wp-admin-theme-color-darker-10: #000;
+	--wp-admin-theme-color-darker-20: #000;
+
+	/* Mosaic colors */
+  --mosaic-primary-color: #ff7778;
+	--mosaic-primary-color-2: color-mix(in srgb, var(--mosaic-primary-color) 90%, #000);
+	--mosaic-secondary-color: #231f20;
+	--mosaic-tertiary-color: #f5f5f5;
+	--mosaic-quaternary-color: #d6d8da;
+}
+
+/**
+ * All elements
+ */
+* {
+	font-family: "Proxima Nova", sans-serif;
+}
+
+/**
+ * Buttons
+ */
+.components-button.is-primary {
+	background-color: var(--mosaic-primary-color);
+}
+
+.components-button.is-primary:hover:not(:disabled,[aria-disabled=true]),
+.components-button.is-primary:focus:not(:disabled,[aria-disabled=true]) {
+	background-color: var(--mosaic-primary-color-2);
+}
+
+/**
+ * Tab list
+ */
+div[role="tablist"][aria-orientation="horizontal"]:before {
+	border-bottom-color: var(--mosaic-primary-color);
+}
+
+/**
+ * Block inserter
+ */
+.block-editor-inserter__block-list {
+	background-color: var(--mosaic-tertiary-color);
+}
+
+.block-editor-inserter__panel-title {
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: none;
+	color: var(--mosaic-secondary-color);
+}
+
+.block-editor-block-types-list__list-item .components-button:not(:disabled,[aria-disabled=true]) {
+	border-radius: 5px;
+}
+
+.block-editor-block-types-list__list-item .components-button:hover:not(:disabled,[aria-disabled=true]) {
+	background-color: white;
+}
+
+.block-editor-block-types-list__list-item .components-button:focus:not(:disabled,[aria-disabled=true]) {
+	background-color: white;
+	box-shadow: 0 0 0 1px inset var(--mosaic-primary-color);
+}
+
+.block-editor-block-types-list__list-item .components-button:after {
+	display: none;
+}
+
+.block-editor-block-types-list__list-item .components-button:hover:not(:disabled,[aria-disabled=true]) svg,
+.block-editor-block-types-list__list-item .components-button:hover:not(:disabled,[aria-disabled=true]) .dashicon {
+	color: var(--mosaic-primary-color) !important;
+}
+
+.block-editor-block-types-list__list-item .components-button:hover:not(:disabled,[aria-disabled=true]) .block-editor-block-types-list__item-title {
+	color: var(--mosaic-secondary-color) !important;
+}
+
+/**
+ * Top level block focus states
+ */
+.is-root-container.block-editor-block-list__layout > .block-editor-block-list__block:not([contenteditable=true]):focus:after {
+	border: solid 4px white;
+	outline-color: var(--mosaic-primary-color);
+}
+
+/**
+ * Core block focus states
+ */
+.wp-block-heading,
+.wp-block-paragraph,
+.block-editor-rich-text__editable,
+.wp-block-list:after,
+.wp-block-list-item > .rich-text,
+.wp-block-buttons:after {
+	outline-color: currentcolor !important;
+	outline-offset: 10px !important;
+}
