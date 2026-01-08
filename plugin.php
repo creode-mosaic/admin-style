@@ -12,3 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Enqueue the stylesheet in the WordPress admin.
 require_once __DIR__ . '/includes/enqueue-stylesheet.php';
+
+// Integrate block icon set.
+require_once __DIR__ . '/includes/block-icons.php';

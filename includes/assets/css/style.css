@@ -108,6 +108,10 @@ div[role="tablist"][aria-orientation="horizontal"]:before {
 	color: var(--mosaic-primary-color) !important;
 }
 
+.block-editor-block-types-list__list-item .components-button:hover:not(:disabled,[aria-disabled=true]) svg path {
+	fill: inherit;
+}
+
 .block-editor-block-types-list__list-item .components-button:hover:not(:disabled,[aria-disabled=true]) .block-editor-block-types-list__item-title {
 	color: var(--mosaic-secondary-color) !important;
 }
