@@ -117,11 +117,31 @@ div[role="tablist"][aria-orientation="horizontal"]:before {
 }
 
 /**
- * Top level block focus states
+ * Block list view
  */
+.block-editor-list-view-leaf.is-selected svg,
+.block-editor-list-view-leaf.is-selected .dashicon {
+	color: white !important;
+	fill: currentColor !important;
+}
+
+.block-editor-list-view-leaf.is-selected svg path {
+	fill: inherit !important;
+}
+
+/**
+ * Top level blocks
+ */
+ :root :where(.wp-site-blocks) > *,
+ :root :where(.is-layout-flow) > * {
+	margin-block-start: 0 !important;
+}
+
+.is-root-container.block-editor-block-list__layout > .block-editor-block-list__block:not([contenteditable=true]):hover:after,
 .is-root-container.block-editor-block-list__layout > .block-editor-block-list__block:not([contenteditable=true]):focus:after {
+	z-index: 10;
 	border: solid 4px white;
-	outline-color: var(--mosaic-primary-color);
+	outline-color: var(--mosaic-primary-color) !important;
 }
 
 /**

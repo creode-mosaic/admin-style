@@ -12,7 +12,7 @@ add_action(
 			'mosaic-admin-style',
 			plugin_dir_url( __FILE__ ) . 'assets/css/style.css',
 			array(),
-			'1'
+			'2'
 		);
 	}
 );
