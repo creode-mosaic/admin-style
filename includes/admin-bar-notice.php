@@ -22,7 +22,7 @@ add_action(
 			)
 		);
 	},
-	20
+	50
 );
 
 /**
@@ -35,7 +35,7 @@ add_action(
 			'mosaic-admin-bar-notice',
 			plugin_dir_url( __FILE__ ) . 'assets/css/admin-bar-notice.css',
 			array(),
-			'1'
+			'2'
 		);
 	}
 );
@@ -50,7 +50,7 @@ add_action(
 			'mosaic-admin-bar-notice',
 			plugin_dir_url( __FILE__ ) . 'assets/css/admin-bar-notice.css',
 			array(),
-			'1'
+			'2'
 		);
 	}
 );

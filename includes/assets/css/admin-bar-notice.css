@@ -12,10 +12,6 @@
 	display: block !important;
 }
 
-.mosaic-admin-bar-notice__text {
-	font-size: 12px !important;
-}
-
 #wp-admin-bar-mosaic-admin-bar-notice:hover .mosaic-admin-bar-notice__text,
 #wp-admin-bar-mosaic-admin-bar-notice:focus-within .mosaic-admin-bar-notice__text {
 	color: var(--mosaic-primary-color) !important;
