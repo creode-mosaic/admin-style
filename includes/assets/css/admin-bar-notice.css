@@ -1,4 +1,12 @@
 /**
+ * Variables
+ */
+ :root {
+	/* Mosaic colors */
+  --mosaic-primary-color: #ff7778;
+}
+
+/**
  * Admin bar notice
  */
  .mosaic-admin-bar-notice__wrapper {
