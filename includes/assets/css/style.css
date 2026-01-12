@@ -225,6 +225,20 @@ div[role="tablist"][aria-orientation="horizontal"]:before {
 /**
  * Login page
  */
+.login h1 a {
+	width: 148px;
+	height: 64px;
+	background-image: url('../logos/2.svg');
+	background-size: 100% 100%;
+	border-radius: 1px;
+}
+
+.login h1 a:focus {
+	outline: 2px solid var(--mosaic-primary-color);
+	outline-offset: 5px;
+	box-shadow: none;
+}
+
 .login .message,
 .login .notice,
 .login .success {

@@ -13,6 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Enqueue the stylesheet in the WordPress admin.
 require_once __DIR__ . '/includes/enqueue-stylesheet.php';
 
+// Amend the login page.
+require_once __DIR__ . '/includes/login-amends.php';
+
 // Add a notice to the admin bar.
 require_once __DIR__ . '/includes/admin-bar-notice.php';
 
