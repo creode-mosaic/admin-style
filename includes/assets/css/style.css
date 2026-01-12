@@ -80,12 +80,54 @@ a:focus,
 	background-color: var(--mosaic-primary-color-2);
 }
 
+.wp-core-ui .button,
+.wp-core-ui .button-secondary,
+.wrap .wp-heading-inline + .page-title-action {
+	background-color: white;
+	border-color: var(--mosaic-secondary-color);
+	color: var(--mosaic-secondary-color);
+}
+
+.wp-core-ui .button:hover,
+.wp-core-ui .button-secondary:hover,
+.wrap .wp-heading-inline + .page-title-action:hover {
+	background-color: var(--mosaic-primary-color-2) !important;
+	border-color: var(--mosaic-primary-color-2) !important;
+	color: white !important;
+}
+
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary:focus,
+.wrap .wp-heading-inline + .page-title-action:focus {
+	background-color: white !important;
+	border-color: var(--mosaic-primary-color-2) !important;
+	outline-color: var(--mosaic-primary-color-2) !important;
+	box-shadow: none !important;
+	color: var(--mosaic-secondary-color) !important;
+}
+
+.wp-core-ui .button:hover:not(:disabled,[aria-disabled=true]),
+.wp-core-ui .button-secondary:hover:not(:disabled,[aria-disabled=true]) {
+	background-color: var(--mosaic-primary-color-2);
+	color: white;
+}
+
 /**
- * Admin menu
+ * Selects
  */
-#adminmenu li.current a.menu-top,
-#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
-	background-color: var(--mosaic-primary-color);
+.wp-core-ui select {
+	border-color: var(--mosaic-secondary-color) !important;
+	color: var(--mosaic-secondary-color) !important;
+}
+
+.wp-core-ui select:hover {
+	border-color: var(--mosaic-secondary-color) !important;
+	color: var(--mosaic-secondary-color) !important;
+}
+
+.wp-core-ui select:focus {
+	border-color: var(--mosaic-primary-color) !important;
+	outline-color: var(--mosaic-primary-color) !important;
 }
 
 /**
@@ -178,4 +220,39 @@ div[role="tablist"][aria-orientation="horizontal"]:before {
 .wp-block-buttons:after {
 	outline-color: currentcolor !important;
 	outline-offset: 10px !important;
+}
+
+/**
+ * Login page
+ */
+.login .message,
+.login .notice,
+.login .success {
+	border-left-color: var(--mosaic-primary-color) !important;
+}
+
+.login input[type=password]:focus,
+.login input[type=text]:focus {
+	border-color: var(--mosaic-primary-color) !important;
+	outline-color: var(--mosaic-primary-color) !important;
+}
+
+.login form input[type=checkbox]:focus {
+	outline-color: var(--mosaic-primary-color) !important;
+	border-color: var(--mosaic-primary-color) !important;
+	box-shadow: none !important;
+}
+
+.wp-login-lost-password:hover,
+.wp-login-log-in:hover,
+#backtoblog > a:hover {
+	color: var(--mosaic-primary-color) !important;
+}
+
+.wp-login-lost-password:focus,
+.wp-login-log-in:focus,
+#backtoblog > a:focus {
+	outline-color: var(--mosaic-primary-color) !important;
+	box-shadow: none !important;
+	outline-offset: 3px !important;
 }
