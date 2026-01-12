@@ -54,6 +54,21 @@
 }
 
 /**
+ * Links
+ */
+a,
+.wp-core-ui .button-link {
+	color: var(--mosaic-secondary-color);
+}
+
+a:hover,
+a:focus,
+.wp-core-ui .button-link:hover,
+.wp-core-ui .button-link:focus {
+	color: var(--mosaic-primary-color);
+}
+
+/**
  * Buttons
  */
 .components-button.is-primary {
@@ -63,6 +78,14 @@
 .components-button.is-primary:hover:not(:disabled,[aria-disabled=true]),
 .components-button.is-primary:focus:not(:disabled,[aria-disabled=true]) {
 	background-color: var(--mosaic-primary-color-2);
+}
+
+/**
+ * Admin menu
+ */
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	background-color: var(--mosaic-primary-color);
 }
 
 /**
